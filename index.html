@@ -164,7 +164,7 @@
                         <p className="text-gray-500 mt-4 max-w-md mx-auto md:mx-0">React, Tailwind, Python, Java, SQL — building modern full-stack systems.</p>
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
                             <a href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-full shadow-md hover:bg-indigo-700 transition"><i className="fas fa-paper-plane mr-2"></i> Hire Me</a>
-                            <a href="https://github.com/atefullahdarman/Bank-Static-Website" className="px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-100 transition"><i className="fab fa-github mr-2"></i> GitHub</a>
+                            <a href="https://github.com/dashboard" className="px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-100 transition"><i className="fab fa-github mr-2"></i> GitHub</a>
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
@@ -179,7 +179,6 @@
                                     
                                 />
                                
-                               
                             </div>
                         </div>
                     </div>
@@ -187,9 +186,30 @@
 
                 {/* About */}
                 <section id="about" className="bg-white/80 rounded-3xl mx-4 md:mx-12 p-6 md:p-8 shadow-xl my-10">
-                    <div className="max-w-5xl mx-auto"><h2 className="text-3xl md:text-4xl font-bold text-center mb-6"><span className="border-b-4 border-indigo-500 pb-2">About Me</span></h2>
-                    <div className="grid md:grid-cols-2 gap-8"><div><p className="text-gray-700 text-lg">I'm Atefullah, a passionate web developer and CS student at <strong>Kandahar University</strong>. I passed Kankor exam and joined CS faculty with excellence.</p><div className="mt-5 bg-indigo-50 p-4 rounded-2xl"><i className="fas fa-trophy text-yellow-500 text-2xl"></i><p className="font-bold mt-1">🎓 2nd Rank at Nooralmadaris High School (1402)</p><p>10th:96% | 11th:98% | 12th:99%</p></div></div>
-                    <div><p><i className="fas fa-language text-indigo-600 w-6"></i> <strong>Languages:</strong> Pashto 100%, Persian 95%, English 85%</p><p className="mt-2"><i className="fas fa-laptop-code text-indigo-600 w-6"></i> <strong>Tech:</strong> HTML, CSS, JS, React, Tailwind, Python, Java, SQL, SEO, Git</p><p className="mt-2"><i className="fas fa-university text-indigo-600 w-6"></i> <strong>University:</strong> Kandahar University (2023-Present)</p></div></div></div>
+                    <div className="max-w-5xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+                            <span className="border-b-4 border-indigo-500 pb-2">About Me</span>
+                        </h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div>
+                        <p className="text-gray-700 text-lg">I'm Atefullah, a passionate web developer and CS student at <strong>Kandahar University</strong>. I passed Kankor exam and joined CS faculty with excellence.</p>
+                        <div className="mt-5 bg-indigo-50 p-4 rounded-2xl">
+                            <i className="fas fa-trophy text-yellow-500 text-2xl"></i>
+                            <p className="font-bold mt-1">🎓 2nd Rank at Nooralmadaris High School (1402)</p>
+                            <p>10th:96% | 11th:98% | 12th:99%</p>
+                        </div>
+                        </div>
+                    <div>
+                        <p>
+                            <i className="fas fa-language text-indigo-600 w-6"></i>
+                            <strong>Languages:</strong> Pashto 100%, Persian 95%, English 85%</p>
+                            <p className="mt-2"><i className="fas fa-laptop-code text-indigo-600 w-6"></i>
+                            <strong>Tech:</strong> HTML, CSS, JS, React, Tailwind, Python, Java, SQL, SEO, Git</p>
+                            <p className="mt-2"><i className="fas fa-university text-indigo-600 w-6"></i>
+                            <strong>University:</strong> Kandahar University (2023-Present)</p>
+                    </div>
+                    </div>
+                    </div>
                 </section>
 
                 {/* Education + Grades */}
@@ -199,8 +219,24 @@
                 <section id="skills" className="py-12 px-5 bg-gradient-to-r from-indigo-50/50 to-pink-50/50 rounded-t-3xl">
                     <div className="max-w-7xl mx-auto"><h2 className="text-3xl md:text-4xl font-bold text-center mb-6"> Technical Skills & Charts</h2>
                     <div className="grid lg:grid-cols-2 gap-8">
-                        <div><div className="bg-white p-4 rounded-2xl shadow-md"><h3 className="text-lg font-bold mb-2 flex gap-2"><i className="fab fa-react text-indigo-500"></i> Core Stack</h3><div className="grid grid-cols-2 sm:grid-cols-3 gap-2">{skillIcons.map(s=> <div key={s.name} className="flex flex-col items-center p-1"><i className={`${s.icon} text-xl sm:text-2xl`} style={{color:s.color}}></i><span className="text-[10px] sm:text-xs">{s.name}</span></div>)}</div></div>
-                        <div className="bg-white p-4 rounded-2xl shadow-md mt-5 text-center"><h3 className="text-lg font-bold mb-1"> Languages</h3><LanguageChart/><div className="flex justify-center gap-3 text-[15px] mt-1"><span>🔵 Pashto</span><span>🟣 Persian</span><span>🩷 English</span></div></div></div>
+                        <div>
+                            <div className="bg-white p-4 rounded-2xl shadow-md">
+                                <h3 className="text-lg font-bold mb-2 flex gap-2"><i className="fab fa-react text-indigo-500"></i> Core Stack</h3>
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">{skillIcons.map(s=> 
+                                        <div key={s.name} className="flex flex-col items-center p-1">
+                                            <i className={`${s.icon} text-xl sm:text-2xl`} style={{color:s.color}}></i>
+                                            <span className="text-[10px] sm:text-xs">{s.name}</span>
+                                        </div>)}
+                                    </div>
+                            </div>
+                        <div className="bg-white p-4 rounded-2xl shadow-md mt-5 text-center">
+                            <h3 className="text-lg font-bold mb-1"> Languages</h3>
+                            <LanguageChart/>
+                            <div className="flex justify-center gap-3 text-[15px] mt-1">
+                                <span>🔵 Pashto</span><span>🟣 Persian</span><span>🩷 English</span>
+                            </div>
+                        </div>
+                    </div>
                         <div className="bg-white p-4 rounded-2xl shadow-md"><h3 className="text-lg font-bold mb-2">Dev Skills Graph</h3><SkillsChart/></div>
                     </div></div>
                 </section>
@@ -209,7 +245,18 @@
                 <section id="projects" className="py-16 px-5 max-w-7xl mx-auto"><h2 className="text-3xl md:text-4xl font-bold text-center mb-4"> My Real-World Projects</h2><p className="text-center text-gray-600 mb-10">Supermarket · Bank · Hospital · Fruit · Titanic · Games · Typing Master · Online Exam</p><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">{projects.map((p,idx)=> (<div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-lg hover-scale transition"><img src={p.img} alt={p.title} className="w-full h-40 object-cover" loading="lazy" onError={(e)=>{e.target.src='https://picsum.photos/id/26/400/250';}} /><div className="p-4"><div className="flex items-center gap-2 text-lg font-bold"><i className={`${p.icon} text-indigo-600`}></i> {p.title}</div><p className="text-gray-600 text-sm mt-1">{p.desc}</p><div className="flex flex-wrap gap-1 mt-2">{p.tags.map(t=> <span key={t} className="bg-gray-100 text-[10px] px-2 py-0.5 rounded-full">{t}</span>)}</div></div></div>))}</div></section>
 
                 {/* Contact + Social */}
-                <section id="contact" className="py-12 px-5 bg-gray-900 text-white rounded-t-3xl"><div className="max-w-5xl mx-auto text-center"><h2 className="text-3xl md:text-4xl font-bold mb-5">Let's Connect</h2><p className="text-gray-300 mb-6">Available for freelance & collaborations.</p><div className="flex flex-wrap justify-center gap-6 text-lg"><a href="https://wa.me/93731597286" className="hover:text-green-400 transition flex gap-2"><i className="fab fa-whatsapp text-xl"></i> WhatsApp</a><a href="https://github.com/atefullahdarman/Bank-Static-Website" className="hover:text-blue-400 transition flex gap-2"><i className="fab fa-github text-xl"></i> GitHub</a><a href="https://www.linkedin.com/in/atefullah-zafar-zoy-2a7019399?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="hover:text-blue-400 transition flex gap-2"><i className="fab fa-linkedin text-xl"></i> LinkedIn</a><a href="#" className="hover:text-blue-400 transition flex gap-2"><i className="fas fa-envelope"></i> atefullah@example.com</a></div><div className="mt-10 pt-5 border-t border-gray-700 text-gray-400 text-sm"> 2025 © Atefullah Zafar Zoi </div></div></section>
+                <section id="contact" className="py-12 px-5 bg-gray-900 text-white rounded-t-3xl">
+                <div className="max-w-5xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-5">Let's Connect</h2>
+                <p className="text-gray-300 mb-6">Available for freelance & collaborations.</p>
+                <div className="flex flex-wrap justify-center gap-6 text-lg"><a href="https://wa.me/93731597286" className="hover:text-green-400 transition flex gap-2"><i className="fab fa-whatsapp text-xl"></i> WhatsApp</a>
+                <a href="https://github.com/dashboard" className="hover:text-blue-400 transition flex gap-2"><i className="fab fa-github text-xl"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/atefullah-zafar-zoy-2a7019399?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="hover:text-blue-400 transition flex gap-2"><i className="fab fa-linkedin text-xl"></i> LinkedIn</a>
+                <a href="atefullahdarman@gmail.com" className="hover:text-blue-400 transition flex gap-2"><i className="fas fa-envelope"></i> atefullahdarman@gmail.com</a>
+                </div>
+                <div className="mt-10 pt-5 border-t border-gray-700 text-gray-400 text-sm"> 2025 © Atefullah Zafar Zoi </div>
+                </div>
+                </section>
             </div>
         );
     };
